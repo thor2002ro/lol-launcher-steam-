@@ -27,9 +27,9 @@ Module Module1
 
             ' Start the process
             Dim lolclient As System.Diagnostics.Process = Process.Start(p)
-            Console.WriteLine("LeagueClient.exe found. This window will close when the game is exited.")
-            lolclient.WaitForExit()
-            Console.WriteLine("LeagueClient.exe was closed, this window will close in 5 seconds")
+            Console.WriteLine("LeagueClient.exe found. this window will close in 5 seconds.")
+            'lolclient.WaitForExit()
+            'Console.WriteLine("LeagueClient.exe was closed, this window will close in 5 seconds")
             System.Threading.Thread.Sleep(5000)
             Environment.[Exit](0)
         Catch __unusedException1__ As Exception
